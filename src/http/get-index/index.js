@@ -5,8 +5,6 @@ const userCard = require('../get-fetch/index')
 exports.handler = async function http (req) {
 
 
-  let data = userCard
-  console.log(userCard)
 
 
   return {

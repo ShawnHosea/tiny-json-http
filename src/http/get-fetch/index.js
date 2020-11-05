@@ -8,8 +8,9 @@ async function userCard(req) {
   let url = `https://reqres.in/api/users`
   let result = await tiny.get({url})
   let users = result.body.data
-  let arr = Array.from(users)
-  let userCard = arr.map(mapUsers)
+  console.log(users)
+  // let arr = Array.from(users)
+  let userCard = users.map(mapUsers)
 
   function mapUsers(user) {
     return `
