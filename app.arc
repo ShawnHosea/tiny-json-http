@@ -5,4 +5,3 @@ begin-app
 
 @http
 get /
-get /fetch
